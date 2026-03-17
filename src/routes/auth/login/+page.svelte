@@ -135,7 +135,7 @@
 		</div>
 
 		<!-- Login Form -->
-		<form on:submit={handleSubmit} class="space-y-6">
+		<form onsubmit={handleSubmit} class="space-y-6">
 			<!-- Username Input -->
 			<div class="space-y-2">
 				<label for="username" class="block text-sm font-medium text-purple-800"> Username </label>
@@ -185,7 +185,7 @@
 					<label for="password" class="block text-sm font-medium text-purple-800"> Password </label>
 					<button
 						type="button"
-						on:click={() => (showPassword = !showPassword)}
+						onclick={() => (showPassword = !showPassword)}
 						class="text-xs text-pink-600 hover:text-pink-800 px-2 py-1 rounded-lg hover:bg-pink-50 transition-colors"
 						tabindex="-1"
 					>

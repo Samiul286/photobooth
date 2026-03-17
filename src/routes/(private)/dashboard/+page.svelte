@@ -162,7 +162,7 @@
 					</div>
 
 					<button
-						on:click={handleLogout}
+						onclick={handleLogout}
 						class="flex items-center gap-2 px-4 py-2 text-sm text-pink-700 hover:text-pink-900
 						       bg-pink-50 hover:bg-pink-100 rounded-lg transition-colors duration-200"
 					>
@@ -427,6 +427,7 @@
 								/>
 								<div class="absolute top-3 right-3">
 									<button
+										aria-label="Add to favorites"
 										class="p-2 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white transition-colors"
 									>
 										<svg
@@ -824,9 +825,9 @@
 					<p class="text-sm text-pink-600">Capturing your special moments since 2024</p>
 				</div>
 				<div class="flex items-center justify-center gap-6">
-					<a href="#" class="text-sm text-pink-600 hover:text-pink-800">Privacy</a>
-					<a href="#" class="text-sm text-pink-600 hover:text-pink-800">Terms</a>
-					<a href="#" class="text-sm text-pink-600 hover:text-pink-800">Help</a>
+					<a href="/privacy" class="text-sm text-pink-600 hover:text-pink-800">Privacy</a>
+					<a href="/terms" class="text-sm text-pink-600 hover:text-pink-800">Terms</a>
+					<a href="/help" class="text-sm text-pink-600 hover:text-pink-800">Help</a>
 				</div>
 			</div>
 		</div>

@@ -146,6 +146,8 @@
 					<!-- Slider Container - Enhanced Visuals -->
 					<div class="lg:w-3/5 relative">
 						<div
+							role="region"
+							aria-label="Photo slider"
 							class="relative group"
 							onmouseenter={() => {
 								isHovering = true;
@@ -201,7 +203,7 @@
 												? 'bg-white w-6 shadow-sm'
 												: 'bg-[#eaeaea] hover:bg-rose-400'}"
 											aria-label={`Go to memory ${i + 1}`}
-										/>
+										></button>
 									{/each}
 								</div>
 							</div>
@@ -296,10 +298,6 @@
 		50% {
 			transform: translateY(-20px);
 		}
-	}
-
-	.animate-float {
-		animation: float 6s ease-in-out infinite;
 	}
 
 	img {
